@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gym Website Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Start Hearder  -->
+<header>
+	<div class="container">
+		<div class="logo">
+			<a href="">Fitness<span>Club</span></a>
+		</div>
+		<a href="css/bootstrap.min.css" class="ham-burger">
+			<span></span>
+			<span></span>
+		</a>
+		<div class="nav">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Services</a></li>
+				<li><a href="">Classes</a></li>
+				<li><a href="">Schedule</a></li>
+				<li><a href="">Price</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<!-- End Header -->
+
+<!-- Start Home -->
+<section class="home">
+    <div class="container">
+	<h1>It's <span>gym</span> time. Let's go </h1>
+	<h2>We are ready to<span> fit you</span></h2>
+</section>
+<!-- End Home -->
+
+<!-- jquery code-->
+
+<cript src="https://ajava.googleapis.com/ajax/libs/jquery.min.js"></cript>
+<script type="text/javascript"></script>
+	$(document).ready(function(){
+		$("ham-burger").click(function(){
+
+			$(".nav").toggleClass("open")
+			$(this).toggleClass("active");
+		}) 
+	})
+</script>
+
+
+
+
